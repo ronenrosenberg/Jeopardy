@@ -24,7 +24,7 @@ function startGame() {
     //set buttons
     startButton.disabled = true;
     resetButton.disabled = false;
-    feedback.innerHTML = "";
+    feedback.innerHTML = "Select a question.";
     
     //reset score
     score = 0;

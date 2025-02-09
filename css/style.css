@@ -8,6 +8,12 @@
   src: url("../fonts/gyparody_rg.ttf");
 }
 
+header {
+  font-family: "Gyparody";
+  font-size: 20px;
+  text-align: center;
+}
+
 body {
   background-color: #aaa;
   font-family: "ITC Korinna Regular";
@@ -18,33 +24,31 @@ body {
   margin: auto;
 }
 
-header {
-  font-family: "Gyparody";
-  text-align: center;
-}
-
 #gameInfo {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-between;
+  margin: 1%;
 }
-
-
 
 #gameBoard {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-rows: 75px 75px 75px 75px 75px 75px 75px;
+  grid-template-rows: 75px 75px 75px 75px 75px 75px;
   width: 100%;
   background-color: black;
+  padding: 0.7%;
 }
 
 .question, .category {
   background-color: blue; 
   color: #FFD700;
+  font-size: 20px;
 }
+
 .category {
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-size: 25px;
 }
 
 /* initial style for gameboard - you'll want to delete this later   */
@@ -59,10 +63,8 @@ header {
 }
 /* end style for gameboard */
 
-
 /* style for modal*/
 #qaModal{
-
   color: #FFD700;
   font-size:25px;
 }
@@ -103,4 +105,18 @@ header {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .category {
+    font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .category {
+    font-size: 15px;
+  }
+  header {
+    font-size: 15px;
+  }
 }
