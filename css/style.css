@@ -1,17 +1,61 @@
 /* Add your style below */
+@font-face {
+  font-family: "ITC Korinna Regular";
+  src: url("../fonts/ITC_Korinna_Regular.otf");
+}
+@font-face {
+  font-family: "Gyparody";
+  src: url("../fonts/gyparody_rg.ttf");
+}
+
+body {
+  background-color: #aaa;
+  font-family: "ITC Korinna Regular";
+}
+
+#container {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  font-family: "Gyparody";
+  text-align: center;
+}
+
+#gameInfo {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+}
 
 
 
+#gameBoard {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 75px 75px 75px 75px 75px 75px 75px;
+  width: 100%;
+  background-color: black;
+}
 
+.question, .category {
+  background-color: blue; 
+  color: #FFD700;
+}
+.category {
+  text-transform: capitalize;
+}
 
 /* initial style for gameboard - you'll want to delete this later   */
 /* it's just for getting started with js */
 #gameBoard div{
-  width: 150px;
-  height: 150px;
   border-style: solid;
   border-color: black;
-  border-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 /* end style for gameboard */
 
