@@ -95,7 +95,6 @@ function checkResponse() {
     const divToHide = document.getElementById(window.localStorage.getItem("currentIndex"));
     divToHide.textContent = "";
     divToHide.style.cursor = "auto";
-    console.log(divToHide.cursor);
     divToHide.removeEventListener("click", viewQuestion);
     
     //close the modal 
