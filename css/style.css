@@ -48,11 +48,10 @@ body {
 
 .category {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 22px;
 }
 
-/* initial style for gameboard - you'll want to delete this later   */
-/* it's just for getting started with js */
+/*style for gameboard */
 #gameBoard div{
   border-style: solid;
   border-color: black;
@@ -61,12 +60,15 @@ body {
   align-items: center;
   text-align: center;
 }
-/* end style for gameboard */
 
 /* style for modal*/
 #qaModal{
   color: #FFD700;
   font-size:25px;
+}
+
+#questionArea {
+  padding-bottom: 0.5%;
 }
 
 /* The Modal (background) */
@@ -98,6 +100,7 @@ body {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  
 }
 
 .close:hover,
@@ -109,7 +112,7 @@ body {
 
 @media (max-width: 720px) {
   .category {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media (max-width: 600px) {
