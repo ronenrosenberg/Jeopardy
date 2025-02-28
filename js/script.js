@@ -35,6 +35,7 @@ function setToken() {
             window.localStorage.setItem("token", token.token);
             startGame(); //after everything, start game is called
         }); 
+    feedback.textContent = "Loading...";
 }
 
 function startGame() {
@@ -51,8 +52,6 @@ function startGame() {
 }
 
 async function populateBoard() {
-    
-
     //when game starts, give each question div the mouse-over style thingy
     document.querySelectorAll(".question").forEach((element) => {
         element.style.cursor = "pointer";
@@ -74,6 +73,7 @@ async function populateBoard() {
         categoryDivs[i].textContent = categoryKeys[i];
         categoryDivs[i].category = categories[categoryKeys[i]];
     }
+    
     //add event listeners and unique ids to question divs
     for (let i = 0; i < questionDivs.length; i++) {
         questionDivs[i].textContent = 10 * (Math.floor(i/5)+1);
