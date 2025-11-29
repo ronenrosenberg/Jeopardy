@@ -1,3 +1,3 @@
 # Jeopardy
 
-Simple Jeopardy project for CS-293
+A simple Jeopardy project for CS-293.
